@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome   -->
+    <script src="https://kit.fontawesome.com/37862f8360.js" crossorigin="anonymous"></script>
+    <!-- Custom Styling   -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <h1 class="logo-h1"> The <span class="logo-span">Yarn</span></h1>
+          </div>
+<i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav"> 
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">About</a>
+                <!-- <drop down for about me > -->
+
+                    <!-- <ul style="left:0px" >
+                        <li><a href="#">About Me </a></li>
+                        <li ><a  href="#">Other Projects</a></li>
+                    </ul> -->
+            </li>
+            <li><a href="#">Services</a></li>
+            <!-- <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li> -->
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Simon Maswabi
+                    <i class="fa fa-chevron-down" style="font-size: .8 rem;"></i>
+                </a>
+                <ul >
+                    <li><a href="#">DashBoard</a></li>
+                    <li ><a class="logout" href="#">Logout</a></li>
+                </ul>
+            </li>
+      
+        </ul>
+
+        <div>
+
+        </div>
+    </header>
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+    <div class="post-slider">
+   <h1 class="slider-title">Tending Posts</h1>
+  
+   <i class="fas fa-chevron-left prev" ></i>
+   <i class="fas fa-chevron-right next"></i>
+   
+ <div class ="post-wrapper">
+    <div class="post">
+        <!-- <div class="img-container">  -->
+            <img src="images/thewordLogo.png" alt="" class="slider-image">
+        <!-- </div> -->
+       
+        <div class="post-info">
+            <h4><a href="single.html"> TITLE: ${TITLE}</a></h4>
+            <p class="dte">by: ${POSTER}</p>
+            <h6 class="dte"> on: ${DATE}</h6>
+        </div>
+    </div>
+    <div class="post">
+        <!-- <div class="img-container">  -->
+            <img src="images/thewordLogo.png" alt="" class="slider-image">
+        <!-- </div> -->
+       
+        <div class="post-info">
+            <h4><a href="single.html"> TITLE: ${TITLE}</a></h4>
+            <p class="dte">by: ${POSTER}</p>
+            <h6 class="dte"> on: ${DATE}</h6>
+        </div>
+    </div>
+    <div class="post">
+        <!-- <div class="img-container">  -->
+            <img src="images/thewordLogo.png" alt="" class="slider-image">
+        <!-- </div> -->
+       
+        <div class="post-info">
+            <h4><a href="single.html"> TITLE 4: ${TITLE}</a></h4>
+            <p class="dte">by: ${POSTER}</p>
+            <h6 class="dte"> on: ${DATE}</h6>
+        </div>
+    </div>
+    <div class="post">
+        <!-- <div class="img-container">  -->
+            <img src="images/thewordLogo.png" alt="" class="slider-image">
+        <!-- </div> -->
+       
+        <div class="post-info">
+            <h4><a href="single.html"> TITLE: ${TITLE}</a></h4>
+            <p class="dte">by: ${POSTER}</p>
+            <h6 class="dte"> on: ${DATE}</h6>
+        </div>
+    </div>
+  
+
+</div>
+
+</div>
+    <!-- Post Slider -->
+
+
+    </div>
+   <!-- // Page Wrapper -->
+
+  
+    <!-- jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js'></script>
+    <!-- slick carousel  -->
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			
+    <!-- custom script  -->
+    <script src ="js/script.js"></script>
+</body>
+</html>

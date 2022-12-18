@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* HEADER STYLING  */
+
+header{
+    background: orange;
+    height: 66px;
+  
+}
+h1, h2, h3, h4 ,h5, h6 , p{
+    font-family: 'Candal', serif;
+    color: grey;
+    margin:5px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+i{ 
+    font-family: 'Lora', serif;
+    color: grey;}
+
+header .logo{
+  float: left;
+  height: inherit;
+  /* border: 1px solid red; */
+  margin-left: 2em;
+}
+
+.logo-h1 {
+    margin: 9px;
+    font-family: 'Candal', serif;
+}
+.logo-span {
+ color: red;
+}
+
+header ul{
+  float: right;
+  margin :0px;
+  /* border: 1px solid red; */
+  list-style: none;
+  padding: 0px;
+}
+
+body{
+   padding: 0px;
+   margin: 0px;
+   background-color: lightyellow;
+   font-family: 'Lora', serif;
+}
+
+
+
+header .menu-toggle{
+    display: none;
+}
+
+header * {
+    color: black;
+    
+}
+
+header ul li{
+    float: left ;
+    position: relative;
+    
+}
+
+/* drop down list */
+header ul li ul{
+    position:absolute ;
+    top:66px ;
+    right:0px ;
+    width:180px ;
+    display: none;
+    z-index:8888;
+   
+}
+header ul li:hover ul{
+
+    display: block;
+   
+}
+
+header ul li ul li{
+ width:100%
+}
+
+header ul li ul li a{
+padding: 10px;
+
+background: lightyellow;
+}
+
+header ul li ul li a:hover{
+background-color: #e0ca04;
+color: #fff9f9;
+}
+header ul li a{
+    display : block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+
+}
+header ul li a:hover{
+    background: #e0ca04;
+    transition: 0.5s;
+    }
+.logout {
+color: red;
+} 
+ /* // HEADER STYLING  */
+
+/* TRENDING POSTS SLIDER  */
+
+.page-wrapper :hover{
+    color: #e0ca04;
+} 
+.post-slider{
+    /* border :1px solid red; */
+    position: relative;
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.post-slider .post-wrapper{
+    width:84%;
+    height:350px;
+    margin: 0px auto;
+    /* border: 1px dashed red; */
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    /* padding-top: 10px; */
+}
+
+.post-slider .post-wrapper .post{
+    display:inline-block;
+    width:300px;
+    height:330px;
+    background-color: white;
+    margin : 0px 10px;
+    border-radius: 10px;
+    box-shadow: 1rem 1rem 1rem -1rem #e0e0e0;
+}
+.post-slider .post-wrapper .post .post-info{
+height:130px;
+/* border: solid green; */
+padding: 0px 5px;
+
+}
+
+
+ .slider-image{
+    width: 100%;
+    height:50%;
+    object-fit:contain;
+    border-top-left-radius: 5px;
+}
+
+.img-container {
+    width: 100%;
+    height:200px;
+}
+.post-slider .next{
+position: absolute;
+top:50%;
+right:30px;
+font-size: 2rem;
+color: aqua ;
+cursor: pointer;
+}
+.post-slider .prev{
+position: absolute;
+top:50%;
+left:30px;
+font-size: 2rem;
+color: aqua ;
+cursor: pointer;
+}
+
+
+
+
+/* //TRENDING POSTS SLIDER  */
+
+/* @MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
+    
+/*  HEADER STYLING  */
+
+    header{
+        position: relative;
+    }
+    header ul{
+        width:100%;
+        background-color: orange;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .showing {
+        max-height: 100em;
+    }
+    
+    header ul li{
+            width: 100%;
+}
+
+header ul li ul{
+    position:static ;
+    width:180px ;
+    display: block;
+    width: 100%;
+    background: inherit;
+   
+}
+.logout {
+    color: red;
+    /* background-color: orange; */
+    } 
+    header ul li ul li a{
+        padding: 10px;
+        background-color: orange;
+        
+        }
+        header .menu-toggle{
+            display: block;
+            right: 20px;
+            top: 20px;
+            font-size: 1.9em;
+            /* border: solid red; */
+            position: absolute;
+        }
+
+        header .logo{
+            float: left;
+            height: inherit;
+            /* border: 1px solid red; */
+            margin-left: .5em;
+          }
+    /* // HEADER STYLING  */
+
+    /* TRENDING POSTS SLIDER  */
+
+    /* //TRENDING POSTS SLIDER  */
+         
+}
